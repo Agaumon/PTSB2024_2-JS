@@ -226,19 +226,22 @@ switch(instructor) {
 
 // done by 8:09 PM ET
 
-let answer = 78
-switch (answer){
-    case "89":
-        console.log(`${answer} A`)
-        break
-    case "79":
-        console.log(`${answer} B`)
-        break
-    case "69":
-        console.log(`${answer} C`)
-    case "59":
-        console.log(`${answer} D`)
-        break
+let grade = 0
+switch (true){
+    case grade >= 89:
+        console.log(`${grade} A`)
+    break
+    case grade >= 79:
+        console.log(`${grade} B`)
+    break
+    case grade >= 69:
+        console.log(`${grade} C`)
+    break
+    case grade >= 59:
+        console.log(`${grade} D`)
+    case grade <=50:
+        console.log(`${grade} F`)
+    break
     default:
         console.log(`Input is not a grade`)
 }
